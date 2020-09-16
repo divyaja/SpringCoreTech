@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<!-- full qualified name of the class is used here -->
+<bean id ="student" class = "com.div.sdi.Student">
+		<!-- property tag uses setter method in the class to set the field values -->
+	<!-- <property name = "studentName" value ="Divya"></property>
+	<property name = "id" value = "123"></property> -->
+		<!-- constructor-arg tag uses constructor in the class to set the field values -->
+	<constructor-arg name = "studentName" value ="Divya" type="java.lang.String"></constructor-arg>
+	<constructor-arg name = "id" value = "123"></constructor-arg>
+</bean>
+<bean id ="student3" class = "com.div.sdi.Student">
+<constructor-arg name = "id" value = "1" type = "int"></constructor-arg>
+</bean>
+  
+  <!-- extra obj creation -->
+<!-- <bean id ="student2" class = "com.div.sdi.Student">
+	<property name = "studentName" value ="Akhil"></property>
+	<property name = "id" value = "143"></property>
+</bean> -->
+
+</beans>
