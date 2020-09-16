@@ -13,7 +13,7 @@ public class Exam {
 		
 		//Spring way for creating objects using ApplicationContext Container
 		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-		//Creating obj using bean id 
+		//Creating obj using bean id in the xml 
 		Student st = context.getBean("student", Student.class);
 		// calling methods from obj 
 		st.displayInfo();
