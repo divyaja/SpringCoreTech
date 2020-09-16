@@ -5,6 +5,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+		<!-- in this bean class we can specify which network is needed -->
 <bean id ="sim" class = "com.dk.sd.Vodafone"></bean>
 
 </beans>
